@@ -2,7 +2,22 @@
 body{
 	background-color: #e9eaef;
 	padding: 1rem;
-	font-family: system;
+	/*font-family: system;*/
+}
+
+button{
+	border:none;
+	background: none;
+}
+p{
+	margin: 0;
+}
+ul,ol{
+	margin:0;
+	padding: 0;
+}
+li{
+	list-style: none;
 }
 
 /* siwtch 开关 */
@@ -86,7 +101,69 @@ body{
 	position:absolute;
 	top: 50%;
 	left: 50%;
+	
+	font-size: 12px;
+	text-align: center;
+	font-size: 13px;
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+}
+
+.zui-dialog header>h2{
+	padding: 20px 20px 0;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.zui-dialog .zui-dialogContent{
+	padding: 0 20px 20px;
+}
+
+.zui-dialog .zui-dialogFooter{
+	display: box;
+	display: -webkit-box;
+	display: flex;
+	height: 43px;
+}
+.zui-dialog .zui-dialogFooter{
+	border-top: 1px solid #e9eaef;
+}
+.zui-dialog .zui-dialogFooter .colum{
+	color: #007aff;
+	font-size: 17px;
+	flex: 1;
+}
+.zui-dialog .zui-dialogFooter .colum:nth-child(2){
+	border-left:1px solid #e9eaef;
+}
+
+/* segment */
+.zui-segment {
+	border:1px solid #007aff;
+	border-radius: 3px;
+	background-color: #fff;
+	margin-bottom: 10px;
+}
+
+.zui-segment .zui-segmentLists{
+	display: box;
+	display: -webkit-box;
+	display: flex;
+}
+.zui-segmentLists li{
+	color: #007aff;
+	font-size: 13px;
+	text-align: center;
+	border-left:1px solid #007aff;
+	flex: 1;
+	line-height: 27px;
+}
+.zui-segmentLists .active{
+	background-color: #007aff;
+	color: #fff;
+}
+.zui-segmentLists li:first-child{
+	border:none;
 }

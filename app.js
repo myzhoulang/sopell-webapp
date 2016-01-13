@@ -26,6 +26,7 @@ app.use(app.router);
 
 app.get('/', routes.index);
 app.get('/dialog', ui.dialog);
+app.get('/segment', ui.segment);
 app.get('/users', users.list);
 
 /// catch 404 and forwarding to error handler

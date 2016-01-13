@@ -51,43 +51,31 @@
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
     
-    <section class="mask">
-    	<h2>dialog 对话框</h2>
+    <section>
+    	<h2>segment</h2>
     	
-    	<section class="zui-dialog ">
-    		<header class="zui-dialogHeader">
-    			<h2>Sign In to iTunes Store</h2>
-    		</header>
-    		
-    		<div class="zui-dialogContent">
-    			<p>Touch ID requires your password when iPhone restarts. Enter the password for “kapilgohe08@gmail.com”.</p>
-    			<!-- <form action="">
-    				<div>
-    					<input type="text" class="form-control" />	
-    				</div>
-    			</form> -->
-    		</div>
-    		
-    		<footer class="zui-dialogFooter">
-    			<button class="colum">Cancel</button>
-    			<button class="colum">OK</button>
-    		</footer>
+    	<section class="zui-segment">
+    		<ul class="zui-segmentLists">
+                <li class="active">label1</li>      
+                <li>label2</li>   
+            </ul>
     	</section>
 
+        <section class="zui-segment">
+            <ul class="zui-segmentLists">
+                <li>label1</li>      
+                <li class="active">label2</li>      
+                <li>label3</li>    
+            </ul>
+        </section>
 
-
-        <section class="zui-dialog hide">
-            <header class="zui-dialogHeader">
-                <h2>Sign In to iTunes Store</h2>
-            </header>
-            
-            <div class="zui-dialogContent">
-                A new iOS update is now available. Please update from the iso 9 beta.
-            </div>
-            
-            <footer class="zui-dialogFooter">
-                <button class="colum">OK</button>
-            </footer>
+        <section class="zui-segment">
+            <ul class="zui-segmentLists">
+                <li class="active">label1</li>      
+                <li>label2</li>      
+                <li>label3</li>      
+                <li class="active">label4</li>      
+            </ul>
         </section>
     </section>
     
