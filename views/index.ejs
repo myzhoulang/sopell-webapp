@@ -2,10 +2,77 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	  <meta name="apple-mobile-web-app-capable" content="yes">
+	  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	  <meta name="apple-itunes-app" content="app-id=979472604">
+	  <meta name="format-detection" content="telephone=no">
+	  <meta http-equiv="Expires" content="-1">
+	  <meta http-equiv="Cache-Control" content="no-cache">
+	  <meta http-equiv="Pragma" content="no-cache">
+	  <!--<script>
+	    var dpr, rem, scale;
+	    var docEl = document.documentElement;
+	    var metaEl = document.querySelector('meta[name="viewport"]');
+	
+	    dpr = window.devicePixelRatio || 1;
+	    
+	    function browser(){
+				var u = navigator.userAgent;
+				return {
+					isWeiXin: u.match(/MicroMessenger/),
+					mobile: !!u.match(/AppleWebKit.*Mobile.*/),
+					ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+					android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1
+				}
+			}
+	    var b = browser();
+	    if(b.mobile){
+	    	rem = docEl.clientWidth * dpr / 10;	
+	    }else{
+	    	rem = 54;
+	    }
+	    
+	    scale = 1 / dpr;
+
+	    // 设置viewport，进行缩放，达到高清效果
+	    metaEl.setAttribute('content', 'width=device-width, initial-scale=' + scale + ',maximum-scale=' + scale + ', minimum-scale=' + scale + ',user-scalable=no');
+	
+	    // 设置data-dpr属性，留作的css hack之用
+	    docEl.setAttribute('data-dpr', dpr);
+	    docEl.style.fontSize = rem +'px';
+	  </script>-->
+    <link rel='stylesheet' href='/stylesheets/normalize.css' />
+    <link rel="stylesheet" href="/stylesheets/icon.css" />
+    <link rel="stylesheet" href="/stylesheets/form.css" />
   </head>
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+    
+    <section>
+    	<h2>表单控件</h2>
+    	
+    	<form>
+    		<h2>switch</h2>
+    		<div class="zui-siwtch">
+    			<input type="checkbox" class="zui-siwtchFormCtrol" />
+    			<span class="zui-siwtchControl"></span>
+    		</div>
+    		
+    		<h2>top search</h2>
+    		<div>
+    			<input type="search" placeholder="Search" />
+    		</div>
+    	</form>
+    </section>
+    
+    <script src="/javascripts/zepto.min.js"></script>
+    <script>
+    	$('.zui-siwtchFormCtrol').tap(function(){
+    		$('.zui-siwtch').toggleClass('zui-siwtchActive')
+    	});
+    </script>
   </body>
 </html>

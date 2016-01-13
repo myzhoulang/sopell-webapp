@@ -1,0 +1,62 @@
+/* switch */
+body{
+	background-color: #e9eaef;
+	padding: 1rem;
+}
+.zui-siwtch{
+	font-size:13px ;
+	height:  30px;
+	position:  relative;
+	background-color: #fff;
+	border-radius:  102px;
+	border:2px solid #ddd;
+	width:  74px;
+	transition: all .5s;
+}
+
+.zui-siwtch:before{
+	content: 'OFF';
+	position: absolute;
+	top: 3px;
+	right: 11px;
+	color: #999;
+}
+
+.zui-siwtchActive{
+	background-color: #4bd262;
+	border:2px solid rgba(0,0,0,0);
+}
+.zui-siwtchActive:before{
+	right: auto;
+	left: 11px;
+	content: 'ON';
+	color: #fff;
+}
+.zui-siwtch input[type="checkbox"]{
+	opacity: 0;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+.zui-siwtchControl{
+	position: absolute;
+	left: -1px;
+	top: 0px ;
+	width: 26px;
+	height: 26px;
+	border-radius: 100% 100%;
+
+	box-shadow: 0 2px 5px rgba(0,0,0,.4);
+	background-color:#fff ;
+	
+	transition:all .2s ease-in-out;
+}
+.zui-siwtchActive  .zui-siwtchControl{
+	/*left: auto;
+	right: 0;*/
+	transform: translateX(45px);
+	-webkit-transform: translateX(45px);
+}
