@@ -2,7 +2,10 @@
 body{
 	background-color: #e9eaef;
 	padding: 1rem;
+	font-family: system;
 }
+
+/* siwtch 开关 */
 .zui-siwtch{
 	font-size:13px ;
 	height:  30px;
@@ -26,12 +29,14 @@ body{
 	background-color: #4bd262;
 	border:2px solid rgba(0,0,0,0);
 }
+
 .zui-siwtchActive:before{
 	right: auto;
 	left: 11px;
 	content: 'ON';
 	color: #fff;
 }
+
 .zui-siwtch input[type="checkbox"]{
 	opacity: 0;
 	position: absolute;
@@ -41,6 +46,7 @@ body{
 	height: 100%;
 	width: 100%;
 }
+
 .zui-siwtchControl{
 	position: absolute;
 	left: -1px;
@@ -54,9 +60,33 @@ body{
 	
 	transition:all .2s ease-in-out;
 }
+
 .zui-siwtchActive  .zui-siwtchControl{
-	/*left: auto;
-	right: 0;*/
 	transform: translateX(45px);
 	-webkit-transform: translateX(45px);
+}
+
+
+
+/* dialog 对话框 */
+.mask{
+	position:fixed;
+	width: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.5);
+}
+
+.zui-dialog{
+	width: 270px;
+	border-radius: 10px;
+	background-color: #fff;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
