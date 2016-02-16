@@ -1,8 +1,52 @@
 /* switch */
 body{
 	background-color: #e9eaef;
-	padding: 1rem;
-	font-family: system;
+/*	padding: 1rem;*/
+  position: relative;
+/*	font-family: system;*/
+}
+
+input{ margin: 0; padding: 0;}
+
+form input[type="search"]{
+  height: 30px;
+  width: 100%;
+  font-size: 15px;
+  border: none;
+  background: none;
+  border-radius: 0;
+  vertical-align: middle;
+}
+
+.zui-topBar{
+  display: -webkit-box;
+  top: 0;
+  left: 0;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  height: 50px;
+  width: 100%;
+  background: #FE5400;
+}
+
+.zui-topBar .logo,.zui-topBar .cart{
+  display: -webkit-box;
+  width: 10%;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}
+.zui-topBar .icon-remind,.zui-topBar .icon-cart{
+  color: #fff;
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+/* 头部搜索框 */
+.zui-topSearch{
+  -webkit-box-flex:1;
+  padding: 0 5px;
+  border:1px solid #ccc;
+  background: #fff;
 }
 
 /* siwtch 开关 */
@@ -89,4 +133,13 @@ body{
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+}
+
+
+.scroll-wrap{
+  width: 100%;
+  display: block;
+  -webkit-box-flex:1;
+  overflow: hidden;
+  position: relative;
 }
