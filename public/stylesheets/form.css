@@ -1,6 +1,7 @@
 /* switch */
 body{
 	background-color: #e9eaef;
+<<<<<<< HEAD
 /*	padding: 1rem;*/
   position: relative;
 /*	font-family: system;*/
@@ -47,6 +48,25 @@ form input[type="search"]{
   padding: 0 5px;
   border:1px solid #ccc;
   background: #fff;
+=======
+	padding: 1rem;
+	/*font-family: system;*/
+}
+
+button{
+	border:none;
+	background: none;
+}
+p{
+	margin: 0;
+}
+ul,ol{
+	margin:0;
+	padding: 0;
+}
+li{
+	list-style: none;
+>>>>>>> dd5e37da9debeda5b58e8eddbf745f0213869748
 }
 
 /* siwtch 开关 */
@@ -130,11 +150,16 @@ form input[type="search"]{
 	position:absolute;
 	top: 50%;
 	left: 50%;
+	
+	font-size: 12px;
+	text-align: center;
+	font-size: 13px;
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
 
+<<<<<<< HEAD
 
 .scroll-wrap{
   width: 100%;
@@ -142,4 +167,62 @@ form input[type="search"]{
   -webkit-box-flex:1;
   overflow: hidden;
   position: relative;
+=======
+.zui-dialog header>h2{
+	padding: 20px 20px 0;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.zui-dialog .zui-dialogContent{
+	padding: 0 20px 20px;
+}
+
+.zui-dialog .zui-dialogFooter{
+	display: box;
+	display: -webkit-box;
+	display: flex;
+	height: 43px;
+}
+.zui-dialog .zui-dialogFooter{
+	border-top: 1px solid #e9eaef;
+}
+.zui-dialog .zui-dialogFooter .colum{
+	color: #007aff;
+	font-size: 17px;
+	flex: 1;
+}
+.zui-dialog .zui-dialogFooter .colum:nth-child(2){
+	border-left:1px solid #e9eaef;
+}
+
+/* segment */
+.zui-segment {
+	border:1px solid #007aff;
+	border-radius: 3px;
+	background-color: #fff;
+	margin-bottom: 10px;
+}
+
+.zui-segment .zui-segmentLists{
+	display: box;
+	display: -webkit-box;
+	display: flex;
+}
+.zui-segmentLists li{
+	color: #007aff;
+	font-size: 13px;
+	text-align: center;
+	border-left:1px solid #007aff;
+	flex: 1;
+	line-height: 27px;
+}
+.zui-segmentLists .active{
+	background-color: #007aff;
+	color: #fff;
+}
+.zui-segmentLists li:first-child{
+	border:none;
+>>>>>>> dd5e37da9debeda5b58e8eddbf745f0213869748
 }
