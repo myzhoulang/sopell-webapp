@@ -160,6 +160,8 @@ textarea
     margin: 0;
 
     color: inherit;
+
+    -webkit-user-select: initial;
 }
 
 button
@@ -263,7 +265,7 @@ th
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     
-/*    -webkit-user-select: none;*/ 
+    -webkit-user-select: none; 
   /* ios9 下input 输入框将获取不到光标 */
 
     outline: none;

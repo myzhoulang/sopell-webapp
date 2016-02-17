@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta name="apple-itunes-app" content="app-id=979472604">
-	<meta name="format-detection" content="telephone=no">
-	<meta http-equiv="Expires" content="-1">
-	<meta http-equiv="Cache-Control" content="no-cache">
-	<meta http-equiv="Pragma" content="no-cache">
-	  <!--<script>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-itunes-app" content="app-id=979472604">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta http-equiv="Pragma" content="no-cache">
+  <!--<script>
 	    var dpr, rem, scale;
 	    var docEl = document.documentElement;
 	    var metaEl = document.querySelector('meta[name="viewport"]');
@@ -43,47 +46,51 @@
 	    docEl.setAttribute('data-dpr', dpr);
 	    docEl.style.fontSize = rem +'px';
 	  </script>-->
-    <link rel='stylesheet' href='/stylesheets/normalize.css' />
-    <link rel="stylesheet" href="/stylesheets/icon.css" />
-    <link rel="stylesheet" href="/stylesheets/form.css" />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    
-    <section>
-    	<h2>segment</h2>
-    	
-    	<section class="zui-segment">
-    		<ul class="zui-segmentLists">
-                <li class="active">label1</li>      
-                <li>label2</li>   
-            </ul>
-    	</section>
+  <link rel='stylesheet' href='/stylesheets/normalize.css' />
+  <link rel="stylesheet" href="/stylesheets/icon.css" />
+  <link rel="stylesheet" href="/stylesheets/form.css" />
+</head>
 
-        <section class="zui-segment">
-            <ul class="zui-segmentLists">
-                <li>label1</li>      
-                <li class="active">label2</li>      
-                <li>label3</li>    
-            </ul>
-        </section>
+<body>
+  <h1><%= title %></h1>
+  <p>Welcome to
+    <%= title %>
+  </p>
 
-        <section class="zui-segment">
-            <ul class="zui-segmentLists">
-                <li class="active">label1</li>      
-                <li>label2</li>      
-                <li>label3</li>      
-                <li class="active">label4</li>      
-            </ul>
-        </section>
+  <section>
+    <h2>segment</h2>
+
+    <section class="zui-segment">
+      <ul class="zui-segmentLists">
+        <li class="active">label1</li>
+        <li>label2</li>
+      </ul>
     </section>
-    
-    <script src="/javascripts/zepto.min.js"></script>
-    <script>
-    	$('.zui-siwtchFormCtrol').tap(function(){
-    		$('.zui-siwtch').toggleClass('zui-siwtchActive')
-    	});
-    </script>
-  </body>
+
+    <section class="zui-segment">
+      <ul class="zui-segmentLists">
+        <li>label1</li>
+        <li class="active">label2</li>
+        <li>label3</li>
+      </ul>
+    </section>
+
+    <section class="zui-segment">
+      <ul class="zui-segmentLists">
+        <li class="active">label1</li>
+        <li>label2</li>
+        <li>label3</li>
+        <li class="active">label4</li>
+      </ul>
+    </section>
+  </section>
+
+  <script src="/javascripts/zepto.min.js"></script>
+  <script>
+    $('.zui-siwtchFormCtrol').tap(function () {
+      $('.zui-siwtch').toggleClass('zui-siwtchActive')
+    });
+  </script>
+</body>
+
 </html>
