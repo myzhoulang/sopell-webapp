@@ -33,7 +33,8 @@ body{
 	color: #fff;
 }
 .zui-siwtch input[type="checkbox"]{
-	opacity: 0;
+  display: block;
+/*	opacity: 0;*/
 	position: absolute;
 	z-index: 2;
 	top: 0;
