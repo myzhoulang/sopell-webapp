@@ -1,8 +1,75 @@
 /* switch */
 body{
 	background-color: #e9eaef;
-	padding: 1rem;
+<<<<<<< HEAD
+/*	padding: 1rem;*/
+  position: relative;
+/*	font-family: system;*/
 }
+
+input{ margin: 0; padding: 0;}
+
+form input[type="search"]{
+  height: 30px;
+  width: 100%;
+  font-size: 15px;
+  border: none;
+  background: none;
+  border-radius: 0;
+  vertical-align: middle;
+}
+
+.zui-topBar{
+  display: -webkit-box;
+  top: 0;
+  left: 0;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  height: 50px;
+  width: 100%;
+  background: #FE5400;
+}
+
+.zui-topBar .logo,.zui-topBar .cart{
+  display: -webkit-box;
+  width: 10%;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}
+.zui-topBar .icon-remind,.zui-topBar .icon-cart{
+  color: #fff;
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+/* 头部搜索框 */
+.zui-topSearch{
+  -webkit-box-flex:1;
+  padding: 0 5px;
+  border:1px solid #ccc;
+  background: #fff;
+=======
+	padding: 1rem;
+	/*font-family: system;*/
+}
+
+button{
+	border:none;
+	background: none;
+}
+p{
+	margin: 0;
+}
+ul,ol{
+	margin:0;
+	padding: 0;
+}
+li{
+	list-style: none;
+>>>>>>> dd5e37da9debeda5b58e8eddbf745f0213869748
+}
+
+/* siwtch 开关 */
 .zui-siwtch{
 	font-size:13px ;
 	height:  30px;
@@ -26,12 +93,14 @@ body{
 	background-color: #4bd262;
 	border:2px solid rgba(0,0,0,0);
 }
+
 .zui-siwtchActive:before{
 	right: auto;
 	left: 11px;
 	content: 'ON';
 	color: #fff;
 }
+
 .zui-siwtch input[type="checkbox"]{
   display: block;
 /*	opacity: 0;*/
@@ -42,6 +111,7 @@ body{
 	height: 100%;
 	width: 100%;
 }
+
 .zui-siwtchControl{
 	position: absolute;
 	left: -1px;
@@ -55,9 +125,105 @@ body{
 	
 	transition:all .2s ease-in-out;
 }
+
 .zui-siwtchActive  .zui-siwtchControl{
-	/*left: auto;
-	right: 0;*/
 	transform: translateX(45px);
 	-webkit-transform: translateX(45px);
+}
+
+
+
+/* dialog 对话框 */
+.mask{
+	position:fixed;
+	width: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.5);
+}
+
+.zui-dialog{
+	width: 270px;
+	border-radius: 10px;
+	background-color: #fff;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	
+	font-size: 12px;
+	text-align: center;
+	font-size: 13px;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+<<<<<<< HEAD
+
+.scroll-wrap{
+  width: 100%;
+  display: block;
+  -webkit-box-flex:1;
+  overflow: hidden;
+  position: relative;
+=======
+.zui-dialog header>h2{
+	padding: 20px 20px 0;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.zui-dialog .zui-dialogContent{
+	padding: 0 20px 20px;
+}
+
+.zui-dialog .zui-dialogFooter{
+	display: box;
+	display: -webkit-box;
+	display: flex;
+	height: 43px;
+}
+.zui-dialog .zui-dialogFooter{
+	border-top: 1px solid #e9eaef;
+}
+.zui-dialog .zui-dialogFooter .colum{
+	color: #007aff;
+	font-size: 17px;
+	flex: 1;
+}
+.zui-dialog .zui-dialogFooter .colum:nth-child(2){
+	border-left:1px solid #e9eaef;
+}
+
+/* segment */
+.zui-segment {
+	border:1px solid #007aff;
+	border-radius: 3px;
+	background-color: #fff;
+	margin-bottom: 10px;
+}
+
+.zui-segment .zui-segmentLists{
+	display: box;
+	display: -webkit-box;
+	display: flex;
+}
+.zui-segmentLists li{
+	color: #007aff;
+	font-size: 13px;
+	text-align: center;
+	border-left:1px solid #007aff;
+	flex: 1;
+	line-height: 27px;
+}
+.zui-segmentLists .active{
+	background-color: #007aff;
+	color: #fff;
+}
+.zui-segmentLists li:first-child{
+	border:none;
+>>>>>>> dd5e37da9debeda5b58e8eddbf745f0213869748
 }

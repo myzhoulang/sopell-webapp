@@ -43,8 +43,7 @@ audio:not([controls])
     height: 0;
 }
 
-[hidden],
-template
+.hide
 {
     display: none;
 }
@@ -192,7 +191,7 @@ html input[disabled]
 
 input
 {
-    line-height: normal;
+/*    line-height: normal;*/
 }
 
 input[type='checkbox'],
@@ -264,7 +263,8 @@ th
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     
-    -webkit-user-select: none;
+/*    -webkit-user-select: none;*/ 
+  /* ios9 下input 输入框将获取不到光标 */
 
     outline: none;
 
