@@ -30,6 +30,7 @@ app.get('/dialog', ui.dialog);
 app.get('/segment', ui.segment);
 app.get('/users', users.list);
 app.get('/form', form.index);
+app.get('/lists', ui.lists)
 
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {

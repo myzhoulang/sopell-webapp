@@ -1,0 +1,102 @@
+.zui-topBar {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  -webkit-aligin-self: center;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  width: 100%;
+  background: #FE5400;
+}
+
+.zui-topBar input[type="search"] {
+  height: 30px;
+  width: 100%;
+  font-size: 15px;
+  border: none;
+  background: none;
+  border-radius: 0;
+  vertical-align: middle;
+}
+
+.zui-topBar .zui-search-box {
+  border: none;
+  border-radius: 2px;
+  background: #fff;
+  height: 30px;
+  position: relative;
+}
+
+.zui-topBar .zui-search {
+  margin: 0 15px 0 35px;
+}
+
+.zui-topBar .zui-search:before {
+  display: block;
+  content: "\e622";
+  font-family: 'ios';
+  position: absolute;
+  left: 10px;
+  top: 4px;
+  color: #ccc;
+  font-weight: bold;
+}
+
+.zui-topBar .icon-box{
+  width: auto;
+  padding: 0 10px;
+}
+
+.zui-topBar .icon-box i{
+  color: #fff;
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.zui-topSearch {
+}
+
+.zui-searchView {
+  display: none;
+}
+
+.zui-searchView .scroll-wrap {
+  padding: 12px;
+}
+
+.zui-searchView .zui-topBar {
+  position: static;
+}
+
+.zui-searchView .zui-topSearch {
+  margin-left: 12px;
+}
+
+.zui-searchView .search-cancel {
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  color: #fff;
+  font-size: 14px;
+  padding: 0 10px;
+}

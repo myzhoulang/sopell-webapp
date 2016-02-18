@@ -1,0 +1,38 @@
+.zui-lists{
+
+}
+.zui-lists li{
+  border-bottom: 1px solid #ccc;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.zui-lists .img-box{
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
+.zui-lists .icon-more{
+  font-family: 'ios';
+  font-size: 24px;
+  font-weight: bold;
+  color: #c7c7cc;
+}
+.zui-lists li:nth-child(1) .img{
+  background-color: #ff9500
+}
+.zui-lists li:nth-child(2) .img{
+  background-color: #ff3b30
+}
+.zui-lists li:nth-child(3) .img{
+  background-color: #4cd964
+}
+.zui-lists li:nth-child(4) .img{
+  background-color: #007aff
+}
+.zui-lists li:nth-child(5) .img{
+  background-color: #5856d6
+}
+.zui-lists li:nth-child(6) .img{
+  background-color: #8e8e93
+}

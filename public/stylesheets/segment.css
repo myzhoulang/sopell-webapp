@@ -1,0 +1,31 @@
+.zui-segment {
+  border: 1px solid #007aff;
+  border-radius: 3px;
+  background-color: #fff;
+  margin-bottom: 10px
+}
+.zui-segment .zui-segmentLists {
+  display: box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex
+}
+.zui-segmentLists li {
+  color: #007aff;
+  font-size: 13px;
+  text-align: center;
+  border-left: 1px solid #007aff;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+  flex: 1;
+  line-height: 27px
+}
+.zui-segmentLists .active {
+  background-color: #007aff;
+  color: #fff
+}
+.zui-segmentLists li:first-child {
+  border: none
+}

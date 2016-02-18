@@ -3,203 +3,193 @@
   <head>
     <title><%= title %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	  <meta name="apple-mobile-web-app-capable" content="yes">
-	  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-	  <meta name="apple-itunes-app" content="app-id=979472604">
-	  <meta name="format-detection" content="telephone=no">
-	  <meta http-equiv="Expires" content="-1">
-	  <meta http-equiv="Cache-Control" content="no-cache">
-	  <meta http-equiv="Pragma" content="no-cache">
-	  <!--<script>
-	    var dpr, rem, scale;
-	    var docEl = document.documentElement;
-	    var metaEl = document.querySelector('meta[name="viewport"]');
-	
-	    dpr = window.devicePixelRatio || 1;
-	    
-	    function browser(){
-				var u = navigator.userAgent;
-				return {
-					isWeiXin: u.match(/MicroMessenger/),
-					mobile: !!u.match(/AppleWebKit.*Mobile.*/),
-					ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
-					android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1
-				}
-			}
-	    var b = browser();
-	    if(b.mobile){
-	    	rem = docEl.clientWidth * dpr / 10;	
-	    }else{
-	    	rem = 54;
-	    }
-	    
-	    scale = 1 / dpr;
-
-	    // 设置viewport，进行缩放，达到高清效果
-	    metaEl.setAttribute('content', 'width=device-width, initial-scale=' + scale + ',maximum-scale=' + scale + ', minimum-scale=' + scale + ',user-scalable=no');
-	
-	    // 设置data-dpr属性，留作的css hack之用
-	    docEl.setAttribute('data-dpr', dpr);
-	    docEl.style.fontSize = rem +'px';
-	  </script>-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-itunes-app" content="app-id=979472604">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
     <link rel='stylesheet' href='/stylesheets/normalize.css' />
-    <link rel="stylesheet" href="/stylesheets/icon.css" />
+    <link rel="stylesheet" href="/stylesheets/iconfont.css" />
+    <link rel="stylesheet" href="/stylesheets/main.css" />
+    <link rel="stylesheet" href="/stylesheets/header.css" />
+    <link rel="stylesheet" href="/stylesheets/nav.css" />
     <link rel="stylesheet" href="/stylesheets/form.css" />
   </head>
   <body>
     <div class="view">
-        <div class="zui-content">
-            <header class="zui-topBar">
-                <div class="logo">
-                  <i class="iconfont icon-navlist"></i>
-                </div>
-                <form class="zui-topSearch">
-                    <div class="zui-search-box">
-                        <div class="zui-search">
-                            <input type="search" placeholder="搜索牛汽配商品/店铺" id="hilight1" />
-                        </div>
-                    </div>
-                </form>
-                <div class="cart">
-                  <i class="iconfont icon-cart"></i>
-                </div>
-            </header>
-            
-            <section class="scroll-wrap">
-              <article>
-                <p>1111</p>
-                <p>222</p>
-                <p>3333</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>1111</p>
-                <p>4546</p>
-              </article>
-            </section>
-
-            <div class="zui-bottomNav">
-                <footer>
-                    <ul class="zui-navsBox">
-                        <li class="active">
-                            <p class="iconfont icon-home"></p>
-                            <p>主页</p>
-                        </li>
-                        <li>
-                            <p class="iconfont icon-erweima"></p>
-                            <p>二维码</p>
-                        </li>
-                        <li>
-                            <p class="iconfont icon-set"></p>
-                            <p>设置</p>
-                        </li>
-                        <li>
-                            <p class="iconfont icon-my"></p>
-                            <p>我的</p>
-                        </li>
-                    </ul>
-                </footer>
+      <div class="zui-content">
+        <header class="zui-topBar flex-box">
+          <div class="icon-box flex-box">
+            <i class="iconfont icon-navlist flex"></i>
+          </div>
+          <form class="zui-topSearch flex">
+            <div class="zui-search-box">
+              <div class="zui-search">
+                <input type="search" placeholder="搜索牛汽配商品/店铺" id="hilight1" />
+              </div>
             </div>
-        </div>
-            
-        <div class="zui-searchView">
-            <header class="zui-topBar">
-                <form class="zui-topSearch">
-                    <div class="zui-search-box">
-                        <div class="zui-search">
-                            <input type="search" placeholder="搜索牛汽配商品/店铺" id="index_newkeyword" />
-                        </div>
-                    </div>
-                </form>
-                <span class="search-cancel">
-                    <span>取消</span>
-                </span>
-            </header>
-            
-            <div class="scroll-wrap">
-                <article class="hot-search">
-                    <header class="iconfont icon-favorfill header">热门搜索</header>
-                    <section class="zui-labelBox">
-                        <ul>
-                            <li><a href="#">喷水壶支架</a></li>
-                            <li><a href="#">喷水电机</a></li>
-                            <li><a href="#">玻璃水</a></li>
-                            <li><a href="#">雨刮</a></li>
-                            <li><a href="#">暖 风水管</a></li>
-                             <li><a href="#">大灯</a></li>
-                            <li><a href="#">节温 器总 成</a></li>
-                            <li><a href="#">玻璃水</a></li>
-                            <li><a href="#">雨刮</a></li>
-                            <li><a href="#">后门锁块 R</a></li>
-                        </ul>
-                    </section>           
-                </article>
-            </div>
-        </div>
+          </form>
+          <div class="icon-box flex-box">
+            <i class="iconfont icon-my flex"></i>
+          </div>
+        </header>
+        <section class="scroll-wrap">
+          <article>
+            <form action="">
+              
+              <div class="form-item">
+                <div class="form-item item-tips">
+                  <p class="error-msg">会话过期，请刷新页面重试</p>
+                </div>
+                <div>
+                  <input type="email" class="input-txt" placeholder="请输入用户名/邮箱/已验证手机" />
+                </div>
+              </div>
+              <div class="form-item">
+                <div class="form-item item-tips">
+                  <p class="success-msg">Success 成功</p>
+                </div>
+                <div>
+                  <input type="text" class="input-txt" placeholder="请输入密码" />
+                </div>
+              </div>
+              <div class="form-item">
+                <div>
+                  <input type="number" class="input-txt" placeholder="请输入验证码" />
+                </div>
+              </div>
+              <div class="form-item flex-box">
+                <label class="zui-checkbox flex-box flex">
+                  <div class="zui-checkboxIconBox">
+                    <input type="checkbox">
+                    <ins class="check-helper"></ins>
+                  </div>
+                  <span class="flex check-label">Checkbox1</span>
+                </label>
 
-        <!-- 侧方 -->
-        <section>
-            
+                <label class="zui-checkbox flex-box flex">
+                  <div class="zui-checkboxIconBox">
+                    <input type="checkbox">
+                    <ins class="check-helper"></ins>
+                  </div>
+                  <span class="flex check-label">Checkbox2</span>
+                </label>
+
+                <label class="zui-checkbox flex-box flex">
+                  <div class="zui-checkboxIconBox">
+                    <input type="checkbox">
+                    <ins class="check-helper"></ins>
+                  </div>
+                  <span class="flex check-label">Checkbox3</span>
+                </label>
+              </div>
+
+              <div class="form-item flex-box">
+                <label class="zui-radio flex-box flex">
+                  <div class="zui-radioIconBox">
+                    <input type="radio" name="sex" value="1">
+                    <ins class="radio-helper"></ins>
+                  </div>
+                  <span class="flex check-label">男</span>
+                </label>
+
+                <label class="zui-radio flex-box flex">
+                  <div class="zui-radioIconBox">
+                    <input type="radio" name="sex" value="0">
+                    <ins class="radio-helper"></ins>
+                  </div>
+                  <span class="flex check-label">女</span>
+                </label>
+              </div>
+              
+              <!-- <div class="form-item">
+                <div style="width:50%;">
+                  <select class="form-select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+              </div> -->
+
+              <div class="form-item">
+                <div class="flex-box">
+                  <div class="zui-siwtch">
+                    <input type="checkbox" style="opacity:0" class="zui-siwtchFormCtrol" />
+                    <span class="zui-siwtchControl"></span>
+                  </div>
+                  <span class="flex check-label">一个月内免登录</span>
+                </div>
+              </div>
+
+              <div class="form-item">
+                <button class="button button-block button-disabled button-login">登录</button>
+              </div>
+            </form>
+          </article>
         </section>
-    </div>   
-    
-    <script src="/javascripts/zepto.min.js"></script>
-    <script>
-    $('#hilight1').focus(function(event) {
-        event.preventDefault();
-        $('.zui-content').hide();
-        $('.zui-searchView').show();
-        $('#index_newkeyword').focus();
-    });
-
-    $('.search-cancel').tap(function (event) {
-        $('.zui-content').show();
-        $('.zui-searchView').hide();
-        $('#index_newkeyword').blur();
-    })
-    </script>
-  </body>
+        <div class="zui-bottomNav">
+          <footer>
+            <ul class="zui-navsBox">
+              <li class="active">
+                <p class="iconfont icon-home"></p>
+                <p>主页</p>
+              </li>
+              <li>
+                <p class="iconfont icon-erweima"></p>
+                <p>二维码</p>
+              </li>
+              <li>
+                <p class="iconfont icon-set"></p>
+                <p>设置</p>
+              </li>
+              <li>
+                <p class="iconfont icon-my"></p>
+                <p>我的</p>
+              </li>
+            </ul>
+          </footer>
+        </div>
+      </div>
+      <!-- 头部搜索 -->
+      <div class="zui-searchView">
+        <header class="zui-topBar">
+          <form class="zui-topSearch">
+            <div class="zui-search-box">
+              <div class="zui-search">
+                <input type="search" placeholder="搜索牛汽配商品/店铺" id="index_newkeyword" />
+              </div>
+            </div>
+          </form>
+          <span class="search-cancel">
+            <span>取消</span>
+          </span>
+        </header>
+        <div class="scroll-wrap">
+          <article class="hot-search">
+          <header class="iconfont icon-favorfill header">热门搜索</header>
+          <section class="zui-labelBox">
+            <ul>
+              <li><a href="#">喷水壶支架</a></li>
+              <li><a href="#">喷水电机</a></li>
+              <li><a href="#">玻璃水</a></li>
+              <li><a href="#">雨刮</a></li>
+              <li><a href="#">暖 风水管</a></li>
+              <li><a href="#">大灯</a></li>
+              <li><a href="#">节温 器总 成</a></li>
+              <li><a href="#">玻璃水</a></li>
+              <li><a href="#">雨刮</a></li>
+              <li><a href="#">后门锁块 R</a></li>
+            </ul>
+          </section>
+        </article>
+      </div>
+    </div>
+  </div>
+  <script src="/javascripts/zepto.min.js"></script>
+  <script src="/javascripts/form.js"></script>
+</body>
 </html>

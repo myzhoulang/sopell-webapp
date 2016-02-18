@@ -1,0 +1,45 @@
+.zui-dialog {
+    width: 270px;
+    border-radius: 10px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 12px;
+    text-align: center;
+    font-size: 13px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.zui-dialog header>h2 {
+    padding: 20px 20px 0;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+}
+.zui-dialog .zui-dialogContent {
+    padding: 0 20px 20px;
+}
+.zui-dialog .zui-dialogFooter {
+    display: box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    height: 43px;
+}
+.zui-dialog .zui-dialogFooter {
+    border-top: 1px solid #e9eaef;
+}
+.zui-dialog .zui-dialogFooter .colum {
+    color: #007aff;
+    font-size: 17px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    flex: 1;
+}
+.zui-dialog .zui-dialogFooter .colum:nth-child(2) {
+    border-left: 1px solid #e9eaef;
+}

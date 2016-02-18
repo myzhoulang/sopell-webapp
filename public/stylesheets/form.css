@@ -1,383 +1,204 @@
-  /* switch */
-  
-  body {
-    background-color: #e9eaef;
-    /*  padding: 1rem;*/
-    position: relative;
-    /*  font-family: system;*/
-  }
+.input-txt{
+  border: 1px solid #e5e6e7;
+  background-color: #fff;
+  background-image: none;
+  font-size: 16px;
+  height: 40px;
+  padding: 0 15px;
+  width: 100%;
+  -webkit-appearance:none;
+     -moz-appearance:none;
+          appearance:none;
+}
 
-  
-  input {
-    margin: 0;
-    padding: 0;
-  }
-  
-  form input[type="search"] {
-    height: 30px;
-    width: 100%;
-    font-size: 15px;
-    border: none;
-    background: none;
-    border-radius: 0;
-    vertical-align: middle;
-  }
-  
-  .zui-topBar {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9;
-    -webkit-aligin-self: center;
-    -webkit-box-pack: center;
-    -webkit-box-align: center;
-    height: 50px;
-    width: 100%;
-    background: #FE5400;
-  }
+/*.form-select{
+  border: 1px solid #e5e6e7;
+  width: 100%;
+  background: #fff;
+}*/
 
-  .zui-topBar .zui-search-box{
-    border: none;
-    border-radius: 2px;
-    background: #fff;
-    height: 30px;
-    position: relative;
-  }
-  .zui-topBar .zui-search{
-    margin:0 15px 0 30px;
-  }
+.button{
+  padding:6px 8px;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #e7eaec;
+  vertical-align: middle;
+  background-color: #fff;
+  color: rgb(103,106,108);
+}
 
-  .zui-topBar .zui-search:before{
-    display: block;
-    content: "\e622";
-    font-family: 'ios';
-    position: absolute;
-    left: 10px;
-    top: 4px;
-    color: #ccc;
-    font-weight: bold;
-  }
+.button-block{
+  width: 100%;
+  line-height: 28px;
+  font-size: 16px;
+}
 
-  .zui-topBar .logo,
-  .zui-topBar .cart {
-    display: box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: flex;
-    width: auto;
-    padding:0 5px; 
-    -webkit-box-pack: center;
-    -webkit-box-align: center;
-    -webkit-align-self: center;
-        -ms-flex-item-align: center;
-            align-self: center;
-    -webkit-box-pack:center;
-    -webkit-justify-content:center;
-        -ms-flex-pack:center;
-            justify-content:center;
-  }
-  
-  .zui-topBar .icon-navlist,
-  .zui-topBar .icon-cart {
-    color: #fff;
-    font-size: 24px;
-    vertical-align: middle;
+.button-disabled{
+  background-color: #e2e2e2;
+  color: #bdbdbd;
+}
 
-  }
-  /* 头部搜索框 */
-  
-  .zui-topSearch {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-
-    -webkit-box-pack: center;
-    -webkit-box-align: center;
-    -webkit-align-self: center;
-        -ms-flex-item-align: center;
-            align-self: center;
-    -webkit-box-pack:center;
-    -webkit-justify-content:center;
-        -ms-flex-pack:center;
-            justify-content:center;
-    
-    /*    =======padding: 1rem;*/
-    /*font-family: system;*/
-  }
-  
-  button {
-    border: none;
-    background: none;
-  }
-  
-  p {
-    margin: 0;
-  }
-  
-  ul,
-  ol {
-    margin: 0;
-    padding: 0;
-  }
-  
-  li {
-    list-style: none;
-  }
-  /* siwtch 开关 */
-  
-  .zui-siwtch {
-    font-size: 13px;
-    height: 30px;
-    position: relative;
-    background-color: #fff;
-    border-radius: 102px;
-    border: 2px solid #ddd;
-    width: 74px;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-  }
-  
-  .zui-siwtch:before {
-    content: 'OFF';
-    position: absolute;
-    top: 3px;
-    right: 11px;
-    color: #999;
-  }
-  
-  .zui-siwtchActive {
-    background-color: #4bd262;
-    border: 2px solid rgba(0, 0, 0, 0);
-  }
-  
-  .zui-siwtchActive:before {
-    right: auto;
-    left: 11px;
-    content: 'ON';
-    color: #fff;
-  }
-  
-  .zui-siwtch input[type="checkbox"] {
-    display: block;
-    /*  opacity: 0;*/
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  }
-  
-  .zui-siwtchControl {
-    position: absolute;
-    left: -1px;
-    top: 0px;
-    width: 26px;
-    height: 26px;
-    border-radius: 100% 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .4);
-    background-color: #fff;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-  }
-  
-  .zui-siwtchActive .zui-siwtchControl {
-    -ms-transform: translateX(45px);
-    -webkit-transform: translateX(45px);
-        transform: translateX(45px);
-  }
-  /* dialog 对话框 */
-  
-  .mask {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, .5);
-  }
-  
-  .zui-dialog {
-    width: 270px;
-    border-radius: 10px;
-    background-color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 12px;
-    text-align: center;
-    font-size: 13px;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-  }
-  
-  .scroll-wrap {
-    padding: 55px 0;
-    width: 100%;
-    display: block;
-    box-flex: 1;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .zui-dialog header>h2 {
-    padding: 20px 20px 0;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 22px;
-  }
-  
-  .zui-dialog .zui-dialogContent {
-    padding: 0 20px 20px;
-  }
-  
-  .zui-dialog .zui-dialogFooter {
-    display: box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: flex;
-    height: 43px;
-  }
-  
-  .zui-dialog .zui-dialogFooter {
-    border-top: 1px solid #e9eaef;
-  }
-  
-  .zui-dialog .zui-dialogFooter .colum {
-    color: #007aff;
-    font-size: 17px;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    -webkit-box-flex: 1;
-            flex: 1;
-  }
-  
-  .zui-dialog .zui-dialogFooter .colum:nth-child(2) {
-    border-left: 1px solid #e9eaef;
-  }
-  /* segment */
-  
-  .zui-segment {
-    border: 1px solid #007aff;
-    border-radius: 3px;
-    background-color: #fff;
-    margin-bottom: 10px;
-  }
-  
-  .zui-segment .zui-segmentLists {
-    display: box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: flex;
-  }
-  
-  .zui-segmentLists li {
-    color: #007aff;
-    font-size: 13px;
-    text-align: center;
-    border-left: 1px solid #007aff;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    -webkit-box-flex: 1;
-            flex: 1;
-    line-height: 27px;
-  }
-  
-  .zui-segmentLists .active {
-    background-color: #007aff;
-    color: #fff;
-  }
-  
-  .zui-segmentLists li:first-child {
-    border: none;
-  }
+.button-login{
+  background-color: #1ab394;
+  border-color: #1ab394;
+  color: #fff;
+}
 
 
-  .zui-bottomNav{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    /*height: 45px;*/
-    padding: 8px 0 4px;
-    background: #f9f9f9;
-    border-top: 1px solid #a3a3a7;
-  }
-  .zui-navsBox li{
-    
-    width: 25%;
-    text-align: center;
-    float: left;
-    font-size: 14px;
-    color: #a7a7a7;
-  }
-  .zui-navsBox li.active{
-    color: #b52024;
-  }
-  .zui-bottomNav .iconfont{
-    font-size: 24px;
-  }
 
-  /**/
-  .zui-searchView{
-    display: none;
-  }
-  .zui-searchView .scroll-wrap{
-    padding: 12px;
-  }
-   .zui-searchView .zui-topBar{
-    position: static;
-   }
-  .zui-searchView .zui-topSearch{
-    margin-left: 12px;
-  }
-  .zui-searchView .search-cancel{
-    -webkit-box-pack: center;
-    -webkit-box-align: center;
-    -webkit-align-self: center;
-        -ms-flex-item-align: center;
-            align-self: center;
-    -webkit-box-pack:center;
-    -webkit-justify-content:center;
-        -ms-flex-pack:center;
-            justify-content:center;
+
+/* checkbox radio */
+.zui-checkbox{
   
-    width: auto;
-    color: #fff;
-    font-size: 14px;
-    padding:0 10px;
-  }
+}
+.zui-checkboxIconBox, .zui-radioIconBox{
+  height: 100%;
+  position: relative;
+}
+.check-helper, .radio-helper{
+  text-decoration: blink;
+}
+.check-helper:after, .radio-helper:after{
+  font-family: 'ios';
+  color: #ccc;
+  font-size: 22px;
+}
+.check-helper:after{
+  content: '\e602';
+}
 
-  .hot-search{
-  
-  }
+.radio-helper:after{
+  content: '\e625';
+}
 
-  .hot-search .header{
-    color:#999;
-  }
+.zui-checkbox input[type="checkbox"],.zui-radio input[type="radio"]{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.zui-checkbox input[type="checkbox"]:checked + .check-helper:after{
+  content: '\e601';
+  color: green;
+}
+.zui-radio input[type="radio"]:checked + .radio-helper:after{
+  content: '\e600';
+  color: green;
+}
 
-  .zui-labelBox{
-    overflow:hidden;
-    margin:.6em 0; 
-  }
-  .zui-labelBox li{
-    float: left;
-    margin:0.2em;
-  }
-  .zui-labelBox a{
-    display: block;
-    border:1px solid #ccc;
-    padding: 0.2em 0.6em;
-    font-size: 12px;
-    color: #999;
-  }
+/* siwtch 开关 */
+.zui-siwtch {
+  font-size: 13px;
+  height: 30px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 102px;
+  border: 2px solid #ddd;
+  width: 74px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.zui-siwtch:before {
+  content: 'OFF';
+  position: absolute;
+  top: 3px;
+  right: 11px;
+  color: #999;
+}
+
+.zui-siwtchActive {
+  background-color: #4bd262;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.zui-siwtchActive:before {
+  right: auto;
+  left: 11px;
+  content: 'ON';
+  color: #fff;
+}
+
+.zui-siwtch input[type="checkbox"] {
+  display: block;    /*  opacity: 0;*/
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.zui-siwtchControl {
+  position: absolute;
+  left: -1px;
+  top: 0px;
+  width: 26px;
+  height: 26px;
+  border-radius: 100% 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .4);
+  background-color: #fff;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.zui-siwtchActive .zui-siwtchControl {
+  -ms-transform: translateX(45px);
+  -webkit-transform: translateX(45px);
+  transform: translateX(45px);
+}
+
+/* dialog 对话框 */
+.mask {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.hot-search {
+}
+
+.hot-search .header {
+  color: #999;
+}
+
+/* label */
+.zui-labelBox {
+  overflow: hidden;
+  margin: .6em 0;
+}
+
+.zui-labelBox li {
+  float: left;
+  margin: 0.2em;
+}
+
+.zui-labelBox a {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 0.2em 0.6em;
+  font-size: 12px;
+  color: #999;
+}
+
+/* form group */
+.form-item{
+  margin-bottom: 10px;
+}
+
+.form-item .item-tips{
+  font-size: 13px;
+}
+
+.item-tips .error-msg{
+  color: #ed5565;
+}
+.item-tips .success-msg{
+  color: #1ab394;
+}

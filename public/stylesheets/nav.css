@@ -1,0 +1,22 @@
+.zui-bottomNav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;/*height: 45px;*/
+  padding: 8px 0 4px;
+  background: #f9f9f9;
+  border-top: 1px solid #a3a3a7;
+}
+.zui-navsBox li {
+  width: 25%;
+  text-align: center;
+  float: left;
+  font-size: 14px;
+  color: #a7a7a7;
+}
+.zui-navsBox li.active {
+  color: #b52024;
+}
+.zui-bottomNav .iconfont {
+  font-size: 24px;
+}
