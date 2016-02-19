@@ -16,4 +16,10 @@ exports.lists = function(req, res) {
   res.render('lists', {
     title: 'Lists'
   })
+};
+
+exports.panel = function(req, res) {
+  res.render('panel', {
+    title: 'Panel'
+  })
 }
