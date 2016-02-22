@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta name="apple-itunes-app" content="app-id=979472604">
-	<meta name="format-detection" content="telephone=no">
-	<meta http-equiv="Expires" content="-1">
-	<meta http-equiv="Cache-Control" content="no-cache">
-	<meta http-equiv="Pragma" content="no-cache">
-	  <!--<script>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-itunes-app" content="app-id=979472604">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta http-equiv="Pragma" content="no-cache">
+  <!--<script>
 	    var dpr, rem, scale;
 	    var docEl = document.documentElement;
 	    var metaEl = document.querySelector('meta[name="viewport"]');
@@ -43,59 +46,64 @@
 	    docEl.setAttribute('data-dpr', dpr);
 	    docEl.style.fontSize = rem +'px';
 	  </script>-->
-    <link rel='stylesheet' href='/stylesheets/normalize.css' />
-    <link rel="stylesheet" href="/stylesheets/icon.css" />
-    <link rel="stylesheet" href="/stylesheets/form.css" />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    
-    <section class="mask">
-    	<h2>dialog 对话框</h2>
-    	
-    	<section class="zui-dialog ">
-    		<header class="zui-dialogHeader">
-    			<h2>Sign In to iTunes Store</h2>
-    		</header>
-    		
-    		<div class="zui-dialogContent">
-    			<p>Touch ID requires your password when iPhone restarts. Enter the password for “kapilgohe08@gmail.com”.</p>
-    			<!-- <form action="">
+  <link rel='stylesheet' href='/stylesheets/normalize.css' />
+  <link rel="stylesheet" href="/stylesheets/icon.css" />
+  <link rel="stylesheet" href="/stylesheets/form.css" />
+</head>
+
+<body>
+  <h1><%= title %></h1>
+  <p>Welcome to
+    <%= title %>
+  </p>
+
+  <section class="mask">
+    <h2>dialog 对话框</h2>
+
+    <section class="zui-dialog ">
+      <header class="zui-dialogHeader">
+        <h2>Sign In to iTunes Store</h2>
+      </header>
+
+      <div class="zui-dialogContent">
+        <p>Touch ID requires your password when iPhone restarts. Enter the password for “kapilgohe08@gmail.com”.</p>
+        <!-- <form action="">
     				<div>
     					<input type="text" class="form-control" />	
     				</div>
     			</form> -->
-    		</div>
-    		
-    		<footer class="zui-dialogFooter">
-    			<button class="colum">Cancel</button>
-    			<button class="colum">OK</button>
-    		</footer>
-    	</section>
+      </div>
 
-
-
-        <section class="zui-dialog hide">
-            <header class="zui-dialogHeader">
-                <h2>Sign In to iTunes Store</h2>
-            </header>
-            
-            <div class="zui-dialogContent">
-                A new iOS update is now available. Please update from the iso 9 beta.
-            </div>
-            
-            <footer class="zui-dialogFooter">
-                <button class="colum">OK</button>
-            </footer>
-        </section>
+      <footer class="zui-dialogFooter">
+        <button class="colum">Cancel</button>
+        <button class="colum">OK</button>
+      </footer>
     </section>
-    
-    <script src="/javascripts/zepto.min.js"></script>
-    <script>
-    	$('.zui-siwtchFormCtrol').tap(function(){
-    		$('.zui-siwtch').toggleClass('zui-siwtchActive')
-    	});
-    </script>
-  </body>
+
+
+
+    <section class="zui-dialog hide">
+      <header class="zui-dialogHeader">
+        <h2>Sign In to iTunes Store</h2>
+      </header>
+
+      <div class="zui-dialogContent">
+        A new iOS update is now available. Please update from the iso 9 beta.
+      </div>
+
+      <footer class="zui-dialogFooter">
+        <button class="colum">OK</button>
+      </footer>
+    </section>
+  </section>
+
+  <script src="/javascripts/zepto.min.js"></script>
+  <script src="/javascripts/zpp.js"></script>
+  <script>
+    $('.zui-siwtchFormCtrol').tap(function () {
+      $('.zui-siwtch').toggleClass('zui-siwtchActive')
+    });
+  </script>
+</body>
+
 </html>

@@ -1,170 +1,203 @@
-.zui-lists{
+.zui-lists {}
 
-}
-.zui-lists li{
+.zui-lists li {
   padding: 8px;
   font-size: 14px;
 }
 
-.zui-lists .img-box{
+.zui-lists li a {
+  color: inherit;
+}
+
+.zui-lists .img-box {
   width: 40px;
   height: 40px;
   margin-right: 8px;
 }
-.zui-lists .icon-more{
+
+.zui-lists .icon-more {
   font-family: 'ios';
   font-size: 24px;
   /*font-weight: bold;*/
   color: #c7c7cc;
 }
 
-.zui-listsBorder li{
-  border-bottom:1px solid #ccc;
+.zui-listsBorder li {
+  border-bottom: 1px solid #ccc;
   /*padding: 8px;*/
 }
 
-.zui-listsContent{
+.zui-listsBorder li:last-child {
+  border-bottom: none;
+}
+
+.zui-listsContent {
   border-bottom: 1px solid #ccc;
 }
 
-
-.zui-lists li:nth-child(1) .img{
+.zui-lists li:nth-child(1) .img {
   background-color: #ff9500
 }
-.zui-lists li:nth-child(2) .img{
+
+.zui-lists li:nth-child(2) .img {
   background-color: #ff3b30
 }
-.zui-lists li:nth-child(3) .img{
+
+.zui-lists li:nth-child(3) .img {
   background-color: #4cd964
 }
-.zui-lists li:nth-child(4) .img{
+
+.zui-lists li:nth-child(4) .img {
   background-color: #007aff
 }
-.zui-lists li:nth-child(5) .img{
+
+.zui-lists li:nth-child(5) .img {
   background-color: #5856d6
 }
-.zui-lists li:nth-child(6) .img{
+
+.zui-lists li:nth-child(6) .img {
   background-color: #8e8e93
 }
 
+
 /* 折叠面板 */
-.zui-panels{
-  margin:20px 0;
-  padding:0;
-  border:1px solid #ddd;
+
+.zui-panels {
+  margin: 20px 0;
+  padding: 0;
+  border: 1px solid #ddd;
   background-color: #fff;
- 
   overflow: hidden;
 }
-.zui-panels .zui-panel{
-  padding:0;
+
+.zui-panels .zui-panel {
+  padding: 0;
   border-radius: 0;
   background: #fff;
-  border:0;
+  border: 0;
   border-bottom: 1px solid #ddd;
   margin-bottom: 0;
 }
 
-.zui-panel{
+.zui-panel {
   /*height: 40px;*/
   margin-bottom: 20px;
   border-radius: 4px;
-  border:1px solid #ddd;
+  border: 1px solid #ddd;
   overflow: hidden;
 }
 
-.panel-collapse{
+.panel-collapse {
+  -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.zui-panelBody{
-   padding: 15px;
-   background-color:#fff; 
+
+.zui-panelBody {
+  padding: 15px;
+  background-color: #fff;
 }
-.zui-panels .zui-panel:last-child{
+
+.zui-panels .zui-panel:last-child {
   border-bottom: none;
 }
-.zui-panels .zui-panelBody{
+
+.zui-panels .zui-panelBody {
   /*display: none;*/
-  
   /*height: 0;*/
   overflow-y: hidden;
 }
 
-.zui-panels .zui-panelHeading .arrow:before{
+.zui-panels .zui-panelHeading .arrow:before {
   font-size: 24px;
   font-family: 'ios';
   content: '\e620';
   color: #c7c7cc;
-} 
+}
 
-.zui-panels .zui-panelHeading.active .arrow:before{
+.zui-panels .zui-panelHeading.active .arrow:before {
   content: '\e61f';
 }
 
-.zui-panel .zui-panelHeading{
+.zui-panel .zui-panelHeading {
   height: 40px;
-  padding:0 8px;
+  padding: 0 8px;
   background-color: #f5f5f5;
   position: relative;
 }
-.zui-panel .zui-panelHeading .close{
+
+.zui-panel .zui-panelHeading .close {
   position: absolute;
   right: 8px;
   top: 8px;
   font-size: 18px;
 }
 
-.zui-panel .zui-panelHeading.active{
+.zui-panel .zui-panelHeading.active {
   background-color: #f5f5f5;
   color: #333;
 }
 
-.zui-panel .zui-panelHeading.active + .zui-panelBody{
+.zui-panel .zui-panelHeading.active + .zui-panelBody {
   display: block;
   /*height: 400px;*/
 }
 
+
 /* primay panel*/
-.zui-primayPanel{
-  border-color:#1ab394;
+
+.zui-primayPanel {
+  border-color: #1ab394;
 }
-.zui-primayPanel .zui-panelHeading{
+
+.zui-primayPanel .zui-panelHeading {
   background-color: #1ab394;
   color: #fff;
 }
 
+
 /* success panel*/
-.zui-successPanel{
-  border-color:#337ab7;
+
+.zui-successPanel {
+  border-color: #337ab7;
 }
-.zui-successPanel .zui-panelHeading{
+
+.zui-successPanel .zui-panelHeading {
   background-color: #337ab7;
   color: #fff;
 }
 
+
 /* info panel*/
-.zui-infoPanel{
+
+.zui-infoPanel {
   border-color: #23c6c8;
 }
-.zui-infoPanel .zui-panelHeading{
+
+.zui-infoPanel .zui-panelHeading {
   background-color: #23c6c8;
   color: #fff;
 }
 
+
 /* warning panel*/
-.zui-warningPanel{
+
+.zui-warningPanel {
   border-color: #f8ac59;
 }
-.zui-warningPanel .zui-panelHeading{
+
+.zui-warningPanel .zui-panelHeading {
   background-color: #f8ac59;
   color: #fff;
 }
 
+
 /* danger panel*/
-.zui-dangerPanel{
+
+.zui-dangerPanel {
   border-color: #ed5565;
 }
-.zui-dangerPanel .zui-panelHeading{
+
+.zui-dangerPanel .zui-panelHeading {
   background-color: #ed5565;
   color: #fff;
 }
