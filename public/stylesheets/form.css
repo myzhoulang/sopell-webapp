@@ -50,7 +50,7 @@
 
 /* checkbox radio */
 .zui-checkbox{
-  
+  position: relative;
 }
 .zui-checkboxIconBox, .zui-radioIconBox{
   height: 100%;
@@ -80,6 +80,13 @@
   height: 100%;
   opacity: 0;
 }
+
+.zui-checkbox .check-label, .zui-radio .check-label{
+  position: relative;
+  top: -2px;
+}
+
+
 .zui-checkbox input[type="checkbox"]:checked + .check-helper:after{
   content: '\e601';
   color: green;

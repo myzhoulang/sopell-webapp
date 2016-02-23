@@ -16,8 +16,8 @@
   <meta http-equiv="Pragma" content="no-cache">
   <link rel='stylesheet' href='/stylesheets/normalize.css' />
   <link rel="stylesheet" href="/stylesheets/iconfont.css" />
-  <link rel="stylesheet" href="/stylesheets/main.css" />
   <link rel="stylesheet" href="/stylesheets/header.css" />
+  <link rel="stylesheet" href="/stylesheets/main.css" />
   <link rel="stylesheet" href="/stylesheets/nav.css" />
   <link rel="stylesheet" href="/stylesheets/form.css" />
 </head>
@@ -27,13 +27,15 @@
     <div class="zui-content">
       <header class="zui-topBar flex-box">
         <div class="icon-box flex-box">
-          <i class="iconfont icon-back flex ActionBack"></i>
+          <i class="iconfont icon-navlist flex"></i>
         </div>
-
-        <div class="flex topBarTitle">
-          <p>表单 Form</p>
-        </div>
-
+        <form class="zui-topSearch flex">
+          <div class="zui-search-box">
+            <div class="zui-search">
+              <input type="search" placeholder="搜索牛汽配商品/店铺" id="hilight1" />
+            </div>
+          </div>
+        </form>
         <div class="icon-box flex-box">
           <i class="iconfont icon-my flex"></i>
         </div>
@@ -156,17 +158,18 @@
         </footer>
       </div>
     </div>
+
     <!-- 头部搜索 -->
     <div class="zui-searchView">
-      <header class="zui-topBar">
-        <form class="zui-topSearch">
-          <div class="zui-search-box">
-            <div class="zui-search">
+      <header class="zui-topBar flex-box">
+        <form class="zui-topSearch flex">
+          <div class="zui-search-box flex-box">
+            <div class="zui-search flex-center">
               <input type="search" placeholder="搜索牛汽配商品/店铺" id="index_newkeyword" />
             </div>
           </div>
         </form>
-        <span class="search-cancel">
+        <span class="search-cancel flex-center">
             <span>取消</span>
         </span>
       </header>
@@ -191,6 +194,7 @@
       </div>
     </div>
   </div>
+  <!--<script src="http://192.168.6.114:8081/target/target-script-min.js#anonymous"></script>-->
   <script src="/javascripts/zepto.min.js"></script>
   <script src="/javascripts/app.js"></script>
   <script src="/javascripts/form.js"></script>

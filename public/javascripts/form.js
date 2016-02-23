@@ -17,7 +17,7 @@ $(function() {
 $(function() {
   function change() {
     $('.zui-siwtch').toggleClass('zui-siwtchActive')
-    $('input[type="checkbox"]').prop('checked', function(i, v) {
+    $('.zui-siwtchFormCtrol input[type="checkbox"]').prop('checked', function(i, v) {
       return !v;
     });
   }
@@ -27,6 +27,6 @@ $(function() {
   }).swipe(function(e) {
     e.stopPropagation();
     e.preventDefault();
-    change()
+    change();
   });
 });
