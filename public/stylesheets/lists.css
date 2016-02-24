@@ -120,8 +120,8 @@
 }
 
 .zui-panel .zui-panelHeading {
-    height: 40px;
-    padding: 0 8px;
+    /*height: 40px;*/
+    padding: 8px;
     background-color: #f5f5f5;
     position: relative;
 }

@@ -54,8 +54,10 @@
     <link rel="stylesheet" href="/stylesheets/nav.css" />
     <link rel="stylesheet" href="/stylesheets/lists.css" />
     <link rel="stylesheet" href="/stylesheets/form.css" />
+    <link rel="stylesheet" href="/stylesheets/sideBox.css" />
     <style>
         .mask {
+            display: none;
             position: absolute;
             top: 0;
             left: 0;
@@ -65,92 +67,10 @@
             z-index: 9;
         }
         
-        .zui-sideBox {
-            position: fixed;
-            left: 0;
-            width: 100%;
-            top: 0;
-            z-index: 10;
-            transform: translateX(-100%);
-            transition:
-            /*all 0.3s linear;*/
-        }
-        
-        .zui-sideBoxContent {
-            position: relative;
-            width: 80%;
-        }
-        
-        .zui-sideBox .mask {
-            z-index: 0;
-        }
-        
-        .zui-sideBox.in {
-            transform: translateX(0);
-        }
-        
-        .zui-indexListsBox {
-            position: relative;
-        }
-        
-        .zui-sideBox-header {
-            padding-left: 8px;
-            height: 34px;
-            font-size: 16px;
-            padding: ;
-            background-color: #fff;
-            text-align: center;
-        }
-        
-        .zui-sideBoxHeaderTitle {
-            padding-right: 28px;
-        }
-        
-        .zui-sideBox:after {}
-        
-        .zui-indexLists {
-            height: 100%;
-            background-color: #fff;
-            padding-right: 25px;
-            overflow-y: scroll;
-        }
-        
-        .zui-indexLists .zui-lists {
-            padding-left: 8px;
-        }
-        
-        .zui-indexLists .indexLists-title {
-            font-size: 18px;
-            margin: 0 0 8px;
-            font-weight: normal;
-            padding-left: 15px;
-            line-height: 28px;
-            background-color: #ccc;
-        }
-        
-        .zui-sideBox .indexListsBar {
-            position: absolute;
-            right: 0px;
-            height: 100%;
-            top: 0;
-            background-color: #D3D3D3;
-            width: 25px;
-        }
-        
-        .indexListsBar span {
-            width: 100%;
-            overflow: hidden;
-            text-align: center;
-            /*line-height: 25px;*/
-            
-            display: block;
-            color: #aaa;
-            font-size: 14px;
-        }
-        
         body {
             overflow: hidden;
         }
+        .index-list a{display: block;}
     </style>
 </head>
 
@@ -177,7 +97,7 @@
             <!-- 中间主内容区域-->
             <div class="scroll-wrap">
                 <div>
-                    <ul class="zui-lists zui-listsBorder">
+                    <ul class="zui-lists zui-listsBorder index-list">
                         <li class="flex-box">
                             <a href="/form" class="flex">表单 Form</a>
                             <i class="iconfont icon-more flex-center"></i>
@@ -225,9 +145,6 @@
                     </ul>
                 </footer>
             </div>
-
-
-
         </div>
     </div>
 
@@ -567,6 +484,7 @@
         </div>
     </aside>
 
+
     <!-- <script src="http://192.168.6.114:8081/target/target-script-min.js#anonymous"></script> -->
     <script src="/javascripts/zepto.min.js"></script>
     <script>
@@ -600,19 +518,43 @@
             e.stopPropagation();
         });
 
-        $('.zui-topBar .icon-navlist').tap(function () {
-            $('.zui-sideBox').css({
-                transition: 'all 0.3s linear'
+       
+
+        (function(){
+            var isClose = true;
+            var prevPageX = 0
+            $('.zui-topBar .icon-navlist').click(function () {
+                 alert(123)
+                alert(1)
+                isClose = false;
+                $('.mask,.zui-sideBox').show();
+                $('.zui-sideBox').css({
+                    '-webkit-transform': 'translateX(0)',
+                    transform: 'translateX(0)',
+                }).find('.zui-sideBoxContent').css({
+                    '-webkit-transition':'all .3s',
+                    transition:'all .3s',
+                    '-webkit-transform': 'translateX(0)',
+                    transform: 'translateX(0)'
+                });//.addClass('in');
+                
+            });
+
+            $('.zui-sideBoxContent').on({
+                transitionend: function(){
+                    
+                    if(isClose){
+                        $('.mask').hide();
+                        console.log(1);
+                        $('.zui-sideBox').css({
+                            transform: 'translateX(-100%)'
+                        })
+                    }
+                    isClose = true;
+                }
             })
-            $('.zui-sideBox').addClass('in');
-        });
 
-        $('.zui-sideBox .mask, .zui-sideBox .head-back').tap(function (e) {
-            e.stopPropagation();
-            $('.zui-sideBox').removeClass('in');
-        });
 
-        var prevPageX = 0
         $('.zui-sideBox').on({
             touchstart: function (e) {
                 prevPageX = e.touches[0].pageX;
@@ -621,20 +563,49 @@
                 e.preventDefault();
                 e.stopPropagation();
                 var PageX = e.touches[0].pageX;
-                var a = $(this).css('transform')
+                var a = $('.zui-sideBoxContent').css('transform')
                 var current = parseInt(a.slice(a.indexOf('(') + 1, -1))
 
 
-                $('.zui-sideBox')[0].style.transition = '';
+                $('.zui-sideBoxContent')[0].style.transition = '';
 
-                $(this).css({
+                $('.zui-sideBoxContent').css({
                     transform: 'translateX(-' + ((prevPageX - PageX) - current) + 'px)'
                 })
 
                 prevPageX = PageX;
 
+            },
+            touchend: function (e) {
+                var boxWidth = $('.zui-sideBoxContent').width()/2;
+                var a = $('.zui-sideBoxContent').css('transform')
+                var current = parseInt(a.slice(a.indexOf('(') + 1, -1));
+                    console.log('c', current);
+                    console.log('box', boxWidth)
+                    $('.zui-sideBoxContent').css('transition','all .3s')
+                 if(current+boxWidth*2 > boxWidth){
+                    $('.zui-sideBoxContent').css({
+                    transform: 'translateX(0)'
+                    })
+                    isClose = false
+                 }else{
+                    $('.zui-sideBoxContent').css({
+                        transform: 'translateX(-100%)'
+                    })
+                    isClose = true
+                 }
+                 
             }
         });
+        })()
+        
+
+        $('.zui-sideBox .mask, .zui-sideBox .head-back').tap(function (e) {
+            e.stopPropagation();
+            $('.zui-sideBox .zui-sideBoxContent').removeClass('in');
+        });
+
+
 
         $('body').swipe(function (e) {
             e.preventDefault();

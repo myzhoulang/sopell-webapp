@@ -1,0 +1,84 @@
+.zui-sideBox {
+            position: fixed;
+            left: 0;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+            -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+        }
+        
+        .zui-sideBoxContent {
+            -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+            position: relative;
+            width: 80%;
+        }
+        
+        .zui-sideBox .mask {
+            z-index: 0;
+        }
+        
+        .zui-sideBoxContent.in {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+        
+        .zui-indexListsBox {
+            position: relative;
+        }
+        
+        .zui-sideBox-header {
+            padding-left: 8px;
+            height: 34px;
+            font-size: 16px;
+            padding: ;
+            background-color: #fff;
+            text-align: center;
+        }
+        
+        .zui-sideBoxHeaderTitle {
+            padding-right: 28px;
+        }
+        
+        .zui-sideBox:after {}
+        
+        .zui-indexLists {
+            height: 100%;
+            background-color: #fff;
+            padding-right: 25px;
+            overflow-y: scroll;
+        }
+        
+        .zui-indexLists .zui-lists {
+            padding-left: 8px;
+        }
+        
+        .zui-indexLists .indexLists-title {
+            font-size: 18px;
+            margin: 0 0 8px;
+            font-weight: normal;
+            padding-left: 15px;
+            line-height: 28px;
+            background-color: #ccc;
+        }
+        
+        .zui-sideBox .indexListsBar {
+            position: absolute;
+            right: 0px;
+            height: 100%;
+            top: 0;
+            background-color: #D3D3D3;
+            width: 25px;
+        }
+        
+        .indexListsBar span {
+            width: 100%;
+            overflow: hidden;
+            text-align: center;
+            /*line-height: 25px;*/
+            
+            display: block;
+            color: #aaa;
+            font-size: 14px;
+        }
