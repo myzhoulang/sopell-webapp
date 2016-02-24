@@ -161,3 +161,8 @@ a {
 a:active {
     color: #0062cc;
 }
+
+
+input::-moz-focus-inner{
+    border-color: red
+}

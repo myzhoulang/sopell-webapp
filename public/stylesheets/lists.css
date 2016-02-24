@@ -5,6 +5,10 @@
     font-size: 14px;
 }
 
+.zui-lists li a {
+    color: inherit;
+}
+
 .zui-lists .img-box {
     width: 40px;
     height: 40px;
@@ -22,6 +26,10 @@
 .zui-listsBorder li {
     border-bottom: 1px solid #ccc;
     /*padding: 8px;*/
+}
+
+.zui-listsBorder li:last-child {
+    border-bottom: none;
 }
 
 .zui-listsContent {
@@ -80,6 +88,7 @@
 }
 
 .panel-collapse {
+    -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
 
@@ -97,25 +106,6 @@
     /*height: 0;*/
     
     overflow-y: hidden;
-}
-
-.zui-panelBody h1,
-.zui-panelBody .h1,
-.zui-panelBody h2,
-.zui-panelBody .h2,
-.zui-panelBody h3,
-.zui-panelBody .h3,
-.zui-panelBody h4,
-.zui-panelBody .h4,
-.zui-panelBody h5,
-.zui-panelBody .h5,
-.zui-panelBody h6,
-.zui-panelBody .h6 {
-    font-family: Helvetica;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    font-weight: 100;
-    color: #676a6c;
 }
 
 .zui-panels .zui-panelHeading .arrow:before {

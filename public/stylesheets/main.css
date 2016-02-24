@@ -40,6 +40,40 @@ li {
     display: flex;
 }
 
+.hide {
+    display: hidden;
+}
+
+h1,
+.h1 {
+    font-size: 36px;
+}
+
+h2,
+.h2 {
+    font-size: 30px;
+}
+
+h3,
+.h3 {
+    font-size: 24px;
+}
+
+h4,
+.h4 {
+    font-size: 18px;
+}
+
+h5,
+.h5 {
+    font-size: 14px;
+}
+
+h6,
+.h6 {
+    font-size: 12px;
+}
+
 .flex-box .flex {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -68,12 +102,20 @@ li {
     justify-content: center;
 }
 
+.zui-content {
+    padding-top: 50px;
+}
+
 .scroll-wrap {
     padding: 12px 12px 55px;
-    margin: 50px 0 0;
+    /*margin: 50px 0 0;*/
+    
     width: 100%;
     display: block;
-    box-flex: 1;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     overflow: hidden;
     position: relative;
 }

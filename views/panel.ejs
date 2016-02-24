@@ -3,7 +3,7 @@
 
 <head>
     <title>
-        <%=t itle %>
+        <%=title %>
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -28,15 +28,11 @@
         <div class="zui-content">
             <header class="zui-topBar flex-box">
                 <div class="icon-box flex-box">
-                    <i class="iconfont icon-navlist flex"></i>
+                    <i class="iconfont icon-back flex ActionBack"></i>
                 </div>
-                <form class="zui-topSearch flex">
-                    <div class="zui-search-box">
-                        <div class="zui-search">
-                            <input type="search" placeholder="搜索牛汽配商品/店铺" id="hilight1" />
-                        </div>
-                    </div>
-                </form>
+                <div class="flex topBarTitle">
+                    <p>面板 Panel</p>
+                </div>
                 <div class="icon-box flex-box">
                     <i class="iconfont icon-my flex"></i>
                 </div>
@@ -243,8 +239,8 @@
             </div>
         </div>
     </div>
-    </div>
     <script src="/javascripts/zepto.min.js"></script>
+    <script src="/javascripts/app.js"></script>
     <script>
         $(function () {
             var panelCollapse = $('.zui-panels .panel-collapse');
@@ -255,7 +251,7 @@
             panelCollapseFirst.css({
                 height: panelCollapseFirst.find('.zui-panelBody').height()
             });
-            $('.zui-panels .arrow').tap(function () {
+            $('.zui-panels .arrow').click(function () {
                 var panelHeader = $(this).parents('.zui-panelHeading');
                 var panelCollapse = panelHeader.next('.panel-collapse');
                 var height = panelCollapse.find('.zui-panelBody').height();

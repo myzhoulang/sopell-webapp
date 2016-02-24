@@ -1,111 +1,115 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-itunes-app" content="app-id=979472604">
-    <meta name="format-detection" content="telephone=no">
-    <meta http-equiv="Expires" content="-1">
-    <meta http-equiv="Cache-Control" content="no-cache">
-    <meta http-equiv="Pragma" content="no-cache">
-    <link rel='stylesheet' href='/stylesheets/normalize.css' />
-    <link rel="stylesheet" href="/stylesheets/iconfont.css" />
-    <link rel="stylesheet" href="/stylesheets/main.css" />
-    <link rel="stylesheet" href="/stylesheets/header.css" />
-    <link rel="stylesheet" href="/stylesheets/nav.css" />
-    <link rel="stylesheet" href="/stylesheets/form.css" />
-  </head>
-  <body>
-    <div class="view">
-      <div class="zui-content">
-        <header class="zui-topBar flex-box">
-          <div class="icon-box flex-box">
-            <i class="iconfont icon-navlist flex"></i>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-itunes-app" content="app-id=979472604">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta http-equiv="Pragma" content="no-cache">
+  <link rel='stylesheet' href='/stylesheets/normalize.css' />
+  <link rel="stylesheet" href="/stylesheets/iconfont.css" />
+  <link rel="stylesheet" href="/stylesheets/header.css" />
+  <link rel="stylesheet" href="/stylesheets/main.css" />
+  <link rel="stylesheet" href="/stylesheets/nav.css" />
+  <link rel="stylesheet" href="/stylesheets/form.css" />
+</head>
+
+<body>
+  <div class="view">
+    <div class="zui-content">
+      <header class="zui-topBar flex-box">
+        <div class="icon-box flex-box">
+          <i class="iconfont icon-navlist flex"></i>
+        </div>
+        <form class="zui-topSearch flex">
+          <div class="zui-search-box">
+            <div class="zui-search">
+              <input type="search" placeholder="搜索牛汽配商品/店铺" id="hilight1" />
+            </div>
           </div>
-          <form class="zui-topSearch flex">
-            <div class="zui-search-box">
-              <div class="zui-search">
-                <input type="search" placeholder="搜索牛汽配商品/店铺" id="hilight1" />
+        </form>
+        <div class="icon-box flex-box">
+          <i class="iconfont icon-my flex"></i>
+        </div>
+      </header>
+      <section class="scroll-wrap">
+        <article>
+          <form action="">
+
+            <div class="form-item">
+              <div class="form-item item-tips">
+                <p class="error-msg">会话过期，请刷新页面重试</p>
+              </div>
+              <div>
+                <input type="email" class="input-txt" placeholder="请输入用户名/邮箱/已验证手机" />
               </div>
             </div>
-          </form>
-          <div class="icon-box flex-box">
-            <i class="iconfont icon-my flex"></i>
-          </div>
-        </header>
-        <section class="scroll-wrap">
-          <article>
-            <form action="">
-              
-              <div class="form-item">
-                <div class="form-item item-tips">
-                  <p class="error-msg">会话过期，请刷新页面重试</p>
-                </div>
-                <div>
-                  <input type="email" class="input-txt" placeholder="请输入用户名/邮箱/已验证手机" />
-                </div>
+            <div class="form-item">
+              <div class="form-item item-tips">
+                <p class="success-msg">Success 成功</p>
               </div>
-              <div class="form-item">
-                <div class="form-item item-tips">
-                  <p class="success-msg">Success 成功</p>
-                </div>
-                <div>
-                  <input type="text" class="input-txt" placeholder="请输入密码" />
-                </div>
+              <div>
+                <input type="text" class="input-txt" placeholder="请输入密码" />
               </div>
-              <div class="form-item">
-                <div>
-                  <input type="number" class="input-txt" placeholder="请输入验证码" />
-                </div>
+            </div>
+            <div class="form-item">
+              <div>
+                <input type="number" class="input-txt" placeholder="请输入验证码" />
               </div>
-              <div class="form-item flex-box">
-                <label class="zui-checkbox flex-box flex">
-                  <div class="zui-checkboxIconBox">
-                    <input type="checkbox">
-                    <ins class="check-helper"></ins>
-                  </div>
-                  <span class="flex check-label">Checkbox1</span>
-                </label>
+            </div>
+            <div class="form-item flex-box">
+              <label class="zui-checkbox flex-box flex">
+                <div class="zui-checkboxIconBox">
+                  <input type="checkbox">
+                  <ins class="check-helper"></ins>
+                </div>
+                <span class="flex check-label">Checkbox1</span>
+              </label>
 
-                <label class="zui-checkbox flex-box flex">
-                  <div class="zui-checkboxIconBox">
-                    <input type="checkbox">
-                    <ins class="check-helper"></ins>
-                  </div>
-                  <span class="flex check-label">Checkbox2</span>
-                </label>
+              <label class="zui-checkbox flex-box flex">
+                <div class="zui-checkboxIconBox">
+                  <input type="checkbox">
+                  <ins class="check-helper"></ins>
+                </div>
+                <span class="flex check-label">Checkbox2</span>
+              </label>
 
-                <label class="zui-checkbox flex-box flex">
-                  <div class="zui-checkboxIconBox">
-                    <input type="checkbox">
-                    <ins class="check-helper"></ins>
-                  </div>
-                  <span class="flex check-label">Checkbox3</span>
-                </label>
-              </div>
+              <label class="zui-checkbox flex-box flex">
+                <div class="zui-checkboxIconBox">
+                  <input type="checkbox">
+                  <ins class="check-helper"></ins>
+                </div>
+                <span class="flex check-label">Checkbox3</span>
+              </label>
+            </div>
 
-              <div class="form-item flex-box">
-                <label class="zui-radio flex-box flex">
-                  <div class="zui-radioIconBox">
-                    <input type="radio" name="sex" value="1">
-                    <ins class="radio-helper"></ins>
-                  </div>
-                  <span class="flex check-label">男</span>
-                </label>
+            <div class="form-item flex-box">
+              <label class="zui-radio flex-box flex">
+                <div class="zui-radioIconBox">
+                  <input type="radio" name="sex" value="1">
+                  <ins class="radio-helper"></ins>
+                </div>
+                <span class="flex check-label">男</span>
+              </label>
 
-                <label class="zui-radio flex-box flex">
-                  <div class="zui-radioIconBox">
-                    <input type="radio" name="sex" value="0">
-                    <ins class="radio-helper"></ins>
-                  </div>
-                  <span class="flex check-label">女</span>
-                </label>
-              </div>
-              
-              <!-- <div class="form-item">
+              <label class="zui-radio flex-box flex">
+                <div class="zui-radioIconBox">
+                  <input type="radio" name="sex" value="0">
+                  <ins class="radio-helper"></ins>
+                </div>
+                <span class="flex check-label">女</span>
+              </label>
+            </div>
+
+            <!-- <div class="form-item">
                 <div style="width:50%;">
                   <select class="form-select">
                     <option value="1">1</option>
@@ -115,61 +119,62 @@
                 </div>
               </div> -->
 
-              <div class="form-item">
-                <div class="flex-box">
-                  <div class="zui-siwtch">
-                    <input type="checkbox" style="opacity:0" class="zui-siwtchFormCtrol" />
-                    <span class="zui-siwtchControl"></span>
-                  </div>
-                  <span class="flex check-label">一个月内免登录</span>
+            <div class="form-item">
+              <div class="flex-box">
+                <div class="zui-siwtch">
+                  <input type="checkbox" style="opacity:0" class="zui-siwtchFormCtrol" />
+                  <span class="zui-siwtchControl"></span>
                 </div>
-              </div>
-
-              <div class="form-item">
-                <button class="button button-block button-disabled button-login">登录</button>
-              </div>
-            </form>
-          </article>
-        </section>
-        <div class="zui-bottomNav">
-          <footer>
-            <ul class="zui-navsBox">
-              <li class="active">
-                <p class="iconfont icon-home"></p>
-                <p>主页</p>
-              </li>
-              <li>
-                <p class="iconfont icon-erweima"></p>
-                <p>二维码</p>
-              </li>
-              <li>
-                <p class="iconfont icon-set"></p>
-                <p>设置</p>
-              </li>
-              <li>
-                <p class="iconfont icon-my"></p>
-                <p>我的</p>
-              </li>
-            </ul>
-          </footer>
-        </div>
-      </div>
-      <!-- 头部搜索 -->
-      <div class="zui-searchView">
-        <header class="zui-topBar">
-          <form class="zui-topSearch">
-            <div class="zui-search-box">
-              <div class="zui-search">
-                <input type="search" placeholder="搜索牛汽配商品/店铺" id="index_newkeyword" />
+                <span class="flex check-label">一个月内免登录</span>
               </div>
             </div>
+
+            <div class="form-item">
+              <button class="button button-block button-disabled button-login">登录</button>
+            </div>
           </form>
-          <span class="search-cancel">
+        </article>
+      </section>
+      <div class="zui-bottomNav">
+        <footer>
+          <ul class="zui-navsBox">
+            <li class="active">
+              <p class="iconfont icon-home"></p>
+              <p>主页</p>
+            </li>
+            <li>
+              <p class="iconfont icon-erweima"></p>
+              <p>二维码</p>
+            </li>
+            <li>
+              <p class="iconfont icon-set"></p>
+              <p>设置</p>
+            </li>
+            <li>
+              <p class="iconfont icon-my"></p>
+              <p>我的</p>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+
+    <!-- 头部搜索 -->
+    <div class="zui-searchView">
+      <header class="zui-topBar flex-box">
+        <form class="zui-topSearch flex">
+          <div class="zui-search-box flex-box">
+            <div class="zui-search flex-center">
+              <input type="search" placeholder="搜索牛汽配商品/店铺" id="index_newkeyword" />
+            </div>
+          </div>
+        </form>
+        <span class="search-cancel flex-center">
             <span>取消</span>
-          </span>
-        </header>
-        <div class="scroll-wrap">
-          <article class="hot-search">
+        </span>
+      </header>
+      <div class="scroll-wrap">
+        <article class="hot-search">
           <header class="iconfont icon-favorfill header">热门搜索</header>
           <section class="zui-labelBox">
             <ul>
@@ -189,7 +194,10 @@
       </div>
     </div>
   </div>
+  <!--<script src="http://192.168.6.114:8081/target/target-script-min.js#anonymous"></script>-->
   <script src="/javascripts/zepto.min.js"></script>
+  <script src="/javascripts/app.js"></script>
   <script src="/javascripts/form.js"></script>
 </body>
+
 </html>

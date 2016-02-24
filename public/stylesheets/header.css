@@ -11,15 +11,20 @@
   -webkit-box-pack: center;
   -webkit-box-align: center;
   -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 50px;
   width: 100%;
   background: #FE5400;
+}
+
+.zui-topBar .topBarTitle {
+  text-align: center;
+  color: #fff;
 }
 
 .zui-topBar input[type="search"] {
@@ -55,22 +60,22 @@
   font-weight: bold;
 }
 
-.zui-topBar .icon-box{
+.zui-topBar .icon-box {
   width: auto;
   padding: 0 10px;
 }
 
-.zui-topBar .icon-box i{
+.zui-topBar .icon-box i {
   color: #fff;
   font-size: 24px;
   vertical-align: middle;
 }
 
-.zui-topSearch {
-}
+.zui-topSearch {}
 
 .zui-searchView {
   display: none;
+  /*transform: translateY(-50px);*/
 }
 
 .zui-searchView .scroll-wrap {
