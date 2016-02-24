@@ -71,7 +71,7 @@
       top: 0;
       z-index: 10;
       transform: translateX(-100%);
-      transition: all 0.3s linear;
+      transition: /*all 0.3s linear;*/
     }
 
     .zui-sideBoxContent{
@@ -196,6 +196,36 @@
           </ul>
         </div>
       </div>
+
+
+      <button>demo</button>
+
+      <style>
+        input[type=range]{
+          width: 200px;
+          -webkit-appearance: none;
+        }
+        input[type=range]::-webkit-slider-runnable-track {
+          width: 300px;
+          height: 20px;
+          background: #ddd;
+          border: none;
+          border-radius: 3px;
+        }
+        input[type=range]::-webkit-slider-thumb {
+         -webkit-appearance: none;
+          border: none;
+          height: 28px;
+          width: 3px;
+          /*border-radius: 50%;*/
+          background: red;
+          margin-top: -4px;
+        } 
+      </style>
+      <input type="range" id="range" min="1" max="12" step="1" value="6">
+
+      
+
 
       <!--  底部导航-->
       <div class="zui-bottomNav">
@@ -593,10 +623,13 @@
     });
 
     $('.zui-sideBox').swipe(function(e){
-      e.stopPropagation();
+     e.stopPropagation();
     });
 
     $('.zui-topBar .icon-navlist').tap(function(){
+      $('.zui-sideBox').css({
+        transition: 'all 0.3s linear'
+      })
       $('.zui-sideBox').addClass('in');
     });
 
@@ -605,6 +638,34 @@
       $('.zui-sideBox').removeClass('in');
     });
 
+    var prevPageX = 0
+    $('.zui-sideBox').on({
+      touchstart: function (e) {
+         prevPageX = e.touches[0].pageX;
+      } ,
+      touchmove: function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        var PageX = e.touches[0].pageX;
+        var a = $(this).css('transform')
+        var current = parseInt(a.slice(a.indexOf('(')+1, -1))
+
+       
+        $('.zui-sideBox')[0].style.transition = '';
+
+        $(this).css({
+          transform: 'translateX(-'+((  prevPageX - PageX) - current)+'px)'
+        })
+        
+        prevPageX = PageX;
+        
+        }
+    });
+
+    $('body').swipe(function(e){
+      e.preventDefault();
+      e.stopPropagation();
+    })
 
     $('.indexListsBar span').click(function(e){
       e.preventDefault();
@@ -614,7 +675,13 @@
       $('.zui-indexLists ol').css({
         'transform': "translateY(-"+pos.top+"px)"
       })
-    })
+    });
+
+    // $('.view').swipeRight(function(e){
+    //   $('.zui-sideBox').css({
+    //     transition: 'all 0.3s linear'
+    //   }).addClass('in');
+    // });
 
     var indexListBar = document.querySelector('.indexListsBar');
 
